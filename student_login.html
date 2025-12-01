@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HCI Project(Charging)</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asul">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: linear-gradient(#00000078, rgba(0,0,0,0.89) 100%), linear-gradient(rgba(0,100,0,0.1) 0%, rgb(0,0,0) 131%), url(&quot;assets/img/clcstfooter.jpg&quot;) center / cover no-repeat;overflow: hidden;">
+    <nav class="navbar navbar-expand-md bg-body">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="gap: 10px;"><img src="assets/img/celtechlogo.png" height="48">
+                <div class="d-flex flex-column text-uppercase navbar-text-home" style="white-space: normal;">
+                    <h1>CENTRAL LUZON COLLEGE OF SCIENCE AND TECHNOLOGY, INC.</h1><span>CELTECH COLLEGE OLONGAPO</span>
+                </div>
+            </a></div>
+    </nav>
+    <main>
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <section class="w-100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-xxl-7">
+                            <div class="card mb-5 login-card">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 1.5rem!important;width: 100%;row-gap: 20px;">
+                                        <h3 class="text-white">Student Login</h3><img src="assets/img/celtechlogo.png" width="180" height="180">
+                                    </div>
+                                    <form id="loginForm" class="text-center w-100" method="post">
+                                        <div class="flex-column mb-3 align-items-start d-flex"><label class="form-label justify-content-start text-white">Student ID / Email</label>
+                                            <div class="d-flex justify-content-center align-items-center align-content-center input-group"><i class="fa fa-user"></i><input class="form-control" type="email" id="email" placeholder="Enter your Student ID or Email" required></div>
+                                        </div>
+                                        <div class="flex-column mb-3 align-items-start d-flex"><label class="form-label text-white">Password</label>
+                                            <div class="input-group"><i class="material-icons">vpn_key</i><input class="form-control" id="password" type="password" placeholder="Enter your password" required></div>
+                                        </div>
+                                        <div class="mb-3"><button class="btn d-block w-100" type="submit">Login</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="authContainer" class="auth-container">
+        <div class="auth-box">
+            <div class="status-area">
+                <div id="spinner" class="spinner"></div>
+                <div id="authMessage" class="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
