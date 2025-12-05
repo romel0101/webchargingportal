@@ -611,10 +611,6 @@ footer .list-inline-item a {
   height: 250px;
 }
 
-.profile:hover {
-  content: url(../../assets/img/user-profile_02_hover.png);
-}
-
 .section .profile-table {
   margin-left: 25px;
   font-size: 18px;
