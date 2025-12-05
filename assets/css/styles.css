@@ -26,7 +26,7 @@
 
 .banner {
   width: 100vw;
-  min-height: 75vh;
+  min-height: 100vh;
   overflow: hidden;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -255,7 +255,7 @@ footer .list-inline-item a {
 }
 
 .course {
-  height: auto;
+  height: 50vh;
 }
 
 .nav-item .btn {
@@ -487,7 +487,7 @@ footer .list-inline-item a {
 }
 
 .news {
-  height: 40vh;
+  height: 50vh;
   margin-top: 1rem;
 }
 
@@ -555,7 +555,7 @@ footer .list-inline-item a {
   gap: 10px;
 }
 
-.section h1 {
+.section h1, h2, h3, h4, h5, h6 {
   color: #ffc107;
   margin-bottom: 20px;
 }
