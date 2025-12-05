@@ -62,7 +62,23 @@ function setupLogin() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", setupLogin);
+// Only initialize login if the login form exists on the page
+// (prevents "Form with id='loginForm' not found." errors)
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize login only on pages that have the login form
+  if (document.getElementById("loginForm")) {
+    setupLogin();
+  }
+
+  setupLogout();
+  setupApproveButtons();
+  
+  if (window.location.pathname.includes("faculty_classlist")) {
+    updateClasslistDashboard();
+  }
+  
+  startCountRefresh();
+});
 
 function setupLogout() {
   const logoutLink = document.getElementById("logoutLink");
@@ -85,8 +101,6 @@ function setupLogout() {
     window.location.href = logoutLink.getAttribute("href");
   });
 }
-
-// ...existing code...
 
 function setupApproveButtons() {
   const approveButtons = document.querySelectorAll(".approveBtn");
@@ -225,15 +239,3 @@ function startCountRefresh() {
     }
   }, 1000);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  setupLogin();
-  setupLogout();
-  setupApproveButtons();
-  
-  if (window.location.pathname.includes("faculty_classlist")) {
-    updateClasslistDashboard();
-  }
-  
-  startCountRefresh();
-});
